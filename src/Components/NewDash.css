@@ -1,0 +1,138 @@
+.NewDash {
+  margin-top: 150px;
+  margin-left: 75px;
+  margin-right: 75px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 980px) {
+  
+  .NewDash-Left {
+    padding-left: 10px;
+    flex: 0.4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .NewDash-Video{
+    display: none;
+  }
+}
+.NewDash-Right {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  
+}
+.NewDash-img {
+  margin: 15px;
+  border-radius: 10px;
+}
+.NewDash-btn {
+  /* background: #187e8a;
+  border-radius: 10px;
+  height: 3.6vw; */
+  text-align: center;
+}
+.btn-new{
+  display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-new:hover{
+  color: rgb(29, 28, 28);
+}
+
+.btn-icon{
+  width: 40px;
+  height: 40px;
+}
+.color-text{
+  color: #fff;
+  font-size: 1.6vw;
+}
+
+.dashcard{
+  display: grid;
+  grid-template-columns: auto auto ;
+  width: auto;
+  backdrop-filter: blur(0px) saturate(200%);
+  -webkit-backdrop-filter: blur(0px) saturate(200%);
+  background-color: rgba(155, 143, 143, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+@media (max-width: 980px) {
+  
+  .dashcard {
+    
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .NewDash-text {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto  auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .NewDash-Right{
+    display: none;
+  }
+  .NewDash-Video{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width:640px) {
+  .dashcard {
+    width: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .NewDash-text {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .NewDash-Right{
+    display: none;
+  }
+  .NewDash-Video{
+    display: flex;
+    justify-content: center;
+  }
+}
