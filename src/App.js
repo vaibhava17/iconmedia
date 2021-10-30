@@ -25,45 +25,7 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route exact path="/iconmedia/">
-            <HeadingContent class="text-center text-capitalize display-2 w-50 mx-auto headingContent animate__animated animate__fadeInUp">
-              <span className="heading-contentOne">GET THE</span>
-              <span className="heading-contentTwo"> ATTENTION</span>
-              <br />
-              <span className="heading-contentOnes">YOUR BRAND</span>
-              <span className="heading-contentThree"> DESERVES</span>
-            </HeadingContent>
             <MainCard />
-            <FirstPage />
-            <Brands />
-            <Profile />
-            <HeadingContent class="text-center text-capitalize display-3 w-50 mt-lg-5  mx-auto headingContent gallery">
-              Gallery
-            </HeadingContent>
-            <SliderGallery />
-            <SliderGalleryReverse />
-            <NewDash />
-            <Testimonial />
-            <Quote />
-            <Footer />
-          </Route>
-          <Route exact path="/iconmedia/about">
-            <FirstPage />
-            <Brands />
-            <Footer />
-          </Route>
-          <Route
-            exact
-            path="/iconmedia/gallery"
-            component={
-              <div className="fluid-container mb-3">
-                <SliderGallery />
-                <SliderGalleryReverse />
-                <Footer className="mt-3" />
-              </div>
-            }
-          ></Route>
-          <Route exact path="/iconmedia/get-in-touch">
-            <Contact />
           </Route>
         </Switch>
       </Router>
