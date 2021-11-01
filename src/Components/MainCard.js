@@ -20,9 +20,11 @@ import wonder from "./images/wonder.jpg";
 let fCard = {
   first: {
     first: girl,
-    second: run,
-    third: video1,
-    fourth: can,
+    second: video1,
+    third: run,
+    fourth: video1,
+    fifth: can,
+    sixth: video1
   },
   second: {
     first: honey,
@@ -41,9 +43,11 @@ let fCard = {
   },
   fifth: {
     first: builder,
-    second: greeting,
-    third: video3,
-    fourth: watch,
+    second: video3,
+    third: greeting,
+    fourth: video3,
+    fifth: watch,
+    sixth: video3
   },
 };
 

@@ -67,28 +67,14 @@ const ThreeCards = (props) => {
     return (
         <>
             <div className={props.class}>
-                <img
-                    className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite"
-                    src={props.src.first}
-                    style={{
-                        boxSizing: "border-box",
-                        overflow: "hidden",
-                        objectFit: "cover",
-                        borderRadius: "10px !important",
-                        // boxSizing: "border-box",
-                        // overflow: "hidden",
-                    }}
-                    alt=""
-                    srcset=""
-                />
                 <HoverVideoPlayer
                     style={{
                         borderRadius: "15px !important",
                         boxSizing: "border-box",
                         overflow: "hidden",
                     }}
-                    videoSrc={props.src.third}
-                    className="card_img img_two"
+                    videoSrc={props.src.first}
+                    className="card_img img_one"
                     restartOnPaused
                     muted={false}
                     pausedOverlay={
@@ -107,19 +93,57 @@ const ThreeCards = (props) => {
                         />
                     }
                 />
-                <img
-                    className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite"
-                    src={props.src.fourth}
-                    alt=""
-                    srcset=""
+                <HoverVideoPlayer
                     style={{
+                        borderRadius: "15px !important",
                         boxSizing: "border-box",
                         overflow: "hidden",
-                        objectFit: "cover",
-                        borderRadius: "10px !important",
-                        // boxSizing: "border-box",
-                        // overflow: "hidden",
                     }}
+                    videoSrc={props.src.third}
+                    className="card_img img_two"
+                    restartOnPaused
+                    muted={false}
+                    pausedOverlay={
+                        <img
+                            src={props.src.fourth}
+                            alt=""
+                            style={{
+                                // Make the image expand to cover the video's dimensions
+                                height: "100%",
+                                width: "100%",
+                                objectFit: "cover",
+                                borderRadius: "10px",
+                                boxSizing: "border-box",
+                                overflow: "hidden",
+                            }}
+                        />
+                    }
+                />
+                <HoverVideoPlayer
+                    style={{
+                        borderRadius: "15px !important",
+                        boxSizing: "border-box",
+                        overflow: "hidden",
+                    }}
+                    videoSrc={props.src.fifth}
+                    className="card_img img_one"
+                    restartOnPaused
+                    muted={false}
+                    pausedOverlay={
+                        <img
+                            src={props.src.sixth}
+                            alt=""
+                            style={{
+                                // Make the image expand to cover the video's dimensions
+                                height: "100%",
+                                width: "100%",
+                                objectFit: "cover",
+                                borderRadius: "10px",
+                                boxSizing: "border-box",
+                                overflow: "hidden",
+                            }}
+                        />
+                    }
                 />
             </div>
         </>
