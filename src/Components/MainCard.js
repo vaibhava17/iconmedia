@@ -1,13 +1,11 @@
 import React from "react";
-import Cards from "./Cards";
-import ThreeCards from "./ThreeCards";
+import {TwoCards,ThreeCards} from "./landing/Landing";
+// import  from "./landing/Landing";
 import video1 from "./Video/v1.mp4";
 import can from "./images/can.jpg";
 import video2 from "./Video/v2.mp4";
 import jam from "./images/jam.jpg";
 import video3 from "./Video/v3.mp4";
-import six from "./images/six.jpg";
-import three from "./images/three.jpg";
 import builder from "./images/builder.jpg";
 import chinese from "./images/chinese.jpg";
 import run from "./images/run.jpg";
@@ -16,8 +14,6 @@ import drinks from "./images/drinks.jpg";
 import watch from "./images/watch.jpg";
 import greeting from "./images/greeting.jpg";
 import swag from "./images/swag.jpg";
-import uniqe from "./images/uniqe.jpg";
-import uniqe2 from "./images/uniqe2.jpg";
 import honey from "./images/honey.jpg";
 import wonder from "./images/wonder.jpg";
 
@@ -60,16 +56,16 @@ const MainCard = () => {
           src={fCard.first}
           class="d-flex flex-column first_card small-screen col-2 mx-auto"
         />
-        <Cards
+        <TwoCards
           src={fCard.second}
           class="d-flex-c flex-column second_card small-screen1 col-2 mx-auto hidecard"
           // style={{ borderRadius: "5px" }}
         />
-        <Cards
+        <TwoCards
           src={fCard.third}
           class="d-flex-c flex-column third_card small-screen2 col-2 mx-auto hidecard"
         />
-        <Cards
+        <TwoCards
           src={fCard.fourth}
           class="d-flex-c flex-column second_card small-screen3 col-2 mx-auto hidecard"
         />
