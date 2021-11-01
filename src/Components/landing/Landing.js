@@ -12,6 +12,9 @@ const TwoCards = (props) => {
                     alt=""
                     srcset=""
                     style={{
+                        borderRadius: "10px !imporatnt",
+                        boxSizing: "border-box",
+                        overflow: "hidden",
                         // Make the image expand to cover the video's dimensions
                         width: "100%",
                         height: "100%",
@@ -68,8 +71,10 @@ const ThreeCards = (props) => {
                     className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite"
                     src={props.src.first}
                     style={{
+                        boxSizing: "border-box",
+                        overflow: "hidden",
                         objectFit: "cover",
-                        borderRadius: "15px !important",
+                        borderRadius: "10px !important",
                         // boxSizing: "border-box",
                         // overflow: "hidden",
                     }}
@@ -107,6 +112,14 @@ const ThreeCards = (props) => {
                     src={props.src.fourth}
                     alt=""
                     srcset=""
+                    style={{
+                        boxSizing: "border-box",
+                        overflow: "hidden",
+                        objectFit: "cover",
+                        borderRadius: "10px !important",
+                        // boxSizing: "border-box",
+                        // overflow: "hidden",
+                    }}
                 />
             </div>
         </>
