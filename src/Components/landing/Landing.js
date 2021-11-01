@@ -83,8 +83,8 @@ const ThreeCards = (props) => {
                             alt=""
                             style={{
                                 // Make the image expand to cover the video's dimensions
-                                height: "100%",
-                                width: "100%",
+                                height: "250px",
+                                width: "250px",
                                 objectFit: "cover",
                                 borderRadius: "10px",
                                 boxSizing: "border-box",
@@ -109,8 +109,8 @@ const ThreeCards = (props) => {
                             alt=""
                             style={{
                                 // Make the image expand to cover the video's dimensions
-                                height: "100%",
-                                width: "100%",
+                                height: "250px",
+                                width: "250px",
                                 objectFit: "cover",
                                 borderRadius: "10px",
                                 boxSizing: "border-box",
@@ -135,8 +135,8 @@ const ThreeCards = (props) => {
                             alt=""
                             style={{
                                 // Make the image expand to cover the video's dimensions
-                                height: "100%",
-                                width: "100%",
+                                height: "250px",
+                                width: "250px",
                                 objectFit: "cover",
                                 borderRadius: "10px",
                                 boxSizing: "border-box",
