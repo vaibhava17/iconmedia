@@ -68,7 +68,7 @@ const ThreeCards = (props) => {
         <>
             <div className={props.class}>
                 <img
-                    className="card_img img_one"
+                    className="card_img img_two"
                     src={props.src.first}
                     style={{
                         objectFit: "cover",
@@ -106,7 +106,7 @@ const ThreeCards = (props) => {
                     }
                 />
                 <img
-                    className="card_img img_one"
+                    className="card_img img_two"
                     src={props.src.fourth}
                     alt=""
                     srcset=""
