@@ -7,7 +7,7 @@ const TwoCards = (props) => {
         <>
             <div className={props.class}>
                 <img
-                    className="card_img img_one animate__animated animate__pulse animate__slower animate__infinite"
+                    className="card_img img_one"
                     src={props.src.first}
                     alt=""
                     srcset=""
@@ -67,31 +67,17 @@ const ThreeCards = (props) => {
     return (
         <>
             <div className={props.class}>
-                <HoverVideoPlayer
-                    style={{
-                        borderRadius: "15px !important",
-                        boxSizing: "border-box",
-                        overflow: "hidden",
-                    }}
-                    videoSrc={props.src.second}
+                <img
                     className="card_img img_one"
-                    restartOnPaused
-                    muted={false}
-                    pausedOverlay={
-                        <img
-                            src={props.src.first}
-                            alt=""
-                            style={{
-                                // Make the image expand to cover the video's dimensions
-                                height: "100%",
-                                width: "100%",
-                                objectFit: "cover",
-                                borderRadius: "10px",
-                                boxSizing: "border-box",
-                                overflow: "hidden",
-                            }}
-                        />
-                    }
+                    src={props.src.first}
+                    style={{
+                        objectFit: "cover",
+                        borderRadius: "15px !important",
+                        // boxSizing: "border-box",
+                        // overflow: "hidden",
+                    }}
+                    alt=""
+                    srcset=""
                 />
                 <HoverVideoPlayer
                     style={{
@@ -99,13 +85,13 @@ const ThreeCards = (props) => {
                         boxSizing: "border-box",
                         overflow: "hidden",
                     }}
-                    videoSrc={props.src.fourth}
+                    videoSrc={props.src.third}
                     className="card_img img_two"
                     restartOnPaused
                     muted={false}
                     pausedOverlay={
                         <img
-                            src={props.src.third}
+                            src={props.src.second}
                             alt=""
                             style={{
                                 // Make the image expand to cover the video's dimensions
@@ -119,31 +105,11 @@ const ThreeCards = (props) => {
                         />
                     }
                 />
-                <HoverVideoPlayer
-                    style={{
-                        borderRadius: "15px !important",
-                        boxSizing: "border-box",
-                        overflow: "hidden",
-                    }}
-                    videoSrc={props.src.sixth}
+                <img
                     className="card_img img_one"
-                    restartOnPaused
-                    muted={false}
-                    pausedOverlay={
-                        <img
-                            src={props.src.fifth}
-                            alt=""
-                            style={{
-                                // Make the image expand to cover the video's dimensions
-                                height: "100%",
-                                width: "100%",
-                                objectFit: "cover",
-                                borderRadius: "10px",
-                                boxSizing: "border-box",
-                                overflow: "hidden",
-                            }}
-                        />
-                    }
+                    src={props.src.fourth}
+                    alt=""
+                    srcset=""
                 />
             </div>
         </>
