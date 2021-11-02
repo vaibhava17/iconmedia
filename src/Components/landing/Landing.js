@@ -1,5 +1,4 @@
 import React from "react";
-import "./landing.css"
 import HoverVideoPlayer from "react-hover-video-player";
 
 const TwoCards = (props) => {
@@ -73,13 +72,13 @@ const ThreeCards = (props) => {
                         boxSizing: "border-box",
                         overflow: "hidden",
                     }}
-                    videoSrc={props.src.first}
+                    videoSrc={props.src.second}
                     className="card_img img_two"
                     restartOnPaused
                     muted={false}
                     pausedOverlay={
                         <img
-                            src={props.src.second}
+                            src={props.src.first}
                             alt=""
                             style={{
                                 // Make the image expand to cover the video's dimensions
@@ -125,13 +124,13 @@ const ThreeCards = (props) => {
                         boxSizing: "border-box",
                         overflow: "hidden",
                     }}
-                    videoSrc={props.src.fifth}
+                    videoSrc={props.src.sixth}
                     className="card_img img_two"
                     restartOnPaused
                     muted={false}
                     pausedOverlay={
                         <img
-                            src={props.src.sixth}
+                            src={props.src.fifth}
                             alt=""
                             style={{
                                 // Make the image expand to cover the video's dimensions

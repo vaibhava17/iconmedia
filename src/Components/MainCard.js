@@ -6,6 +6,8 @@ import can from "./images/can.jpg";
 import video2 from "./Video/v2.mp4";
 import jam from "./images/jam.jpg";
 import video3 from "./Video/v3.mp4";
+import video5 from "./Video/v4.mp4";
+import video4 from "./Video/v5.mp4";
 import builder from "./images/builder.jpg";
 import chinese from "./images/chinese.jpg";
 import run from "./images/run.jpg";
@@ -20,11 +22,11 @@ import wonder from "./images/wonder.jpg";
 let fCard = {
   first: {
     first: girl,
-    second: girl,
+    second: video4,
     third: run,
     fourth: video1,
     fifth: can,
-    sixth: can
+    sixth: video4
   },
   second: {
     first: honey,
@@ -43,11 +45,11 @@ let fCard = {
   },
   fifth: {
     first: builder,
-    second: builder,
+    second: video5,
     third: greeting,
     fourth: video3,
     fifth: watch,
-    sixth: watch
+    sixth: video5
   },
 };
 
