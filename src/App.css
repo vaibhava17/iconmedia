@@ -367,6 +367,91 @@ word-spacing: 2px;
   background-size: cover;
   background-origin: border-box;
 }
+.slider .slide2 {
+  height: 260px;
+  width: 260px;
+}
+
+.slide2:nth-child(1),
+.slide2:nth-child(10) {
+  background: url(./Components/images/gallary/10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(2),
+.slide2:nth-child(11) {
+  background: url(./Components/images/gallary/11.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(3),
+.slide2:nth-child(12) {
+  background: url(./Components/images/gallary/12.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(4),
+.slide2:nth-child(13) {
+  background: url(./Components/images/gallary/14.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(5),
+.slide2:nth-child(14) {
+  background: url(./Components/images/gallary/15.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(6),
+.slide2:nth-child(15) {
+  background: url(./Components/images/gallary/16.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(7),
+.slide2:nth-child(16) {
+  background: url(./Components/images/gallary/17.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(8),
+.slide2:nth-child(17) {
+  background: url(./Components/images/gallary/18.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.slide2:nth-child(9),
+.slide2:nth-child(18) {
+  background: url(./Components/images/gallary/19.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
 
 .testimonials h1 {
   margin-top: 200px;
