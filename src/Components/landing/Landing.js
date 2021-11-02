@@ -144,10 +144,9 @@ const ThreeCards = (props) => {
                         />
                     }
                 />
-                
             </div>
         </>
     );
 };
 
-export {ThreeCards,TwoCards};
+export { ThreeCards, TwoCards };
