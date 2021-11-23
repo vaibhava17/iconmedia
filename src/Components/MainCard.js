@@ -1,81 +1,104 @@
-import React from "react";
-import {TwoCards,ThreeCards} from "./landing/Landing";
-// import  from "./landing/Landing";
-import video1 from "./Video/v1.mp4";
-import can from "./images/can.jpg";
-import video2 from "./Video/v2.mp4";
-import jam from "./images/jam.jpg";
-import video3 from "./Video/v3.mp4";
-import video5 from "./Video/v4.mp4";
-import video4 from "./Video/v5.mp4";
-import builder from "./images/builder.jpg";
-import chinese from "./images/chinese.jpg";
-import run from "./images/run.jpg";
-import girl from "./images/girl.jpg";
-import drinks from "./images/drinks.jpg";
-import watch from "./images/watch.jpg";
-import greeting from "./images/greeting.jpg";
-import swag from "./images/swag.jpg";
-import honey from "./images/honey.jpg";
-import wonder from "./images/wonder.jpg";
+import React, { useEffect } from "react";
+import Cards from "./Cards";
+import ThreeCards from "./ThreeCards";
+import one from "./images/main/1.jpg";
+import two from "./images/main/2.jpg";
+import three from "./images/main/3.jpg";
+import four from "./images/main/4.jpg";
+import five from "./images/main/5.jpg";
+import six from "./images/main/6.jpg";
+import seven from "./images/main/7.jpg";
+import eight from "./images/main/8.jpg";
+import nine from "./images/main/9.jpg";
+import ten from "./images/main/10.jpg";
+import eleven from "./images/main/11.jpg";
+import twelve from "./images/main/12.jpg";
+import onev from "./images/main/1.mp4";
+import twov from "./images/main/2.mp4";
+import threev from "./images/main/3.mp4";
+import fourv from "./images/main/4.mp4";
+import fivev from "./images/main/5.mp4";
+import sixv from "./images/main/6.mp4";
+import sevenv from "./images/main/7.mp4";
+import eightv from "./images/main/8.mp4";
+import ninev from "./images/main/9.mp4";
+import tenv from "./images/main/10.mp4";
+import elevenv from "./images/main/11.mp4";
+import twelvev from "./images/main/12.mp4";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 let fCard = {
   first: {
-    first: girl,
-    second: video4,
-    third: run,
-    fourth: video1,
-    fifth: can,
-    sixth: video4
+    first: one,
+    second: onev,
+    third: two,
+    fourth: twov,
+    fifth: three,
+    sixth: threev,
   },
   second: {
-    first: honey,
-    second: video2,
-    third: drinks,
+    first: four,
+    second: fourv,
+    third: five,
+    fourth: fivev,
   },
   third: {
-    first: chinese,
-    second: video3,
-    third: jam,
+    first: six,
+    second: sixv,
+    third: seven,
+    fourth: sevenv,
   },
   fourth: {
-    first: wonder,
-    second: video2,
-    third: swag,
+    first: eight,
+    second: eightv,
+    third: nine,
+    fourth: ninev,
   },
   fifth: {
-    first: builder,
-    second: video5,
-    third: greeting,
-    fourth: video3,
-    fifth: watch,
-    sixth: video5
+    first: ten,
+    second: tenv,
+    third: eleven,
+    fourth: elevenv,
+    fifth: twelve,
+    sixth: twelvev,
   },
 };
 
 const MainCard = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 3000,
+      easing: "ease-in",
+      delay: 50,
+    });
+  });
   return (
     <>
-      <div class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2">
+      <div
+        id="cards"
+        class="container-fluid w-70 d-flex align-items-center justify-content-between flex-wrap main_card_flex pb-lg-2 "
+      >
         <ThreeCards
-          // style={{ borderRadius: "5px" }}
           src={fCard.first}
-          class="d-flex flex-column first_card small-screen col-2 mx-auto"
+          class=" d-flex flex-column first_card small-screen col-2 mx-auto"
         />
-        <TwoCards
+        <Cards
           src={fCard.second}
           class="d-flex-c flex-column second_card small-screen1 col-2 mx-auto hidecard"
-          // style={{ borderRadius: "5px" }}
         />
-        <TwoCards
+        <Cards
           src={fCard.third}
           class="d-flex-c flex-column third_card small-screen2 col-2 mx-auto hidecard"
         />
-        <TwoCards
+        <Cards
           src={fCard.fourth}
           class="d-flex-c flex-column second_card small-screen3 col-2 mx-auto hidecard"
         />
         <ThreeCards
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
           src={fCard.fifth}
           class="d-flex flex-column first_card small-screen col-2 mx-auto"
         />

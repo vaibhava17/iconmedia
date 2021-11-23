@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SliderGallery = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 2000,
+      easing: "ease-in",
+    });
+  });
   return (
     <>
-      <div className="">
+      <div data-aos="fade-in" className="">
         <div class="slider">
           <div class="slide-track">
             <div class="slide"></div>
@@ -29,15 +38,7 @@ const SliderGallery = () => {
       </div>
       <style jsx>
         {`
-          .slider {
-            background-color: #2b0505;
-           
-          }
-          .slide {
-            margin-left: 10px;
-            margin-right: 10px;
-            border-radius: 20px;
-          }
+          
         `}
       </style>
     </>
