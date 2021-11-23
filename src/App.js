@@ -20,17 +20,14 @@ import Brands from "./Components/Brands";
 import FAQ from "./Components/FAQ";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
-// import Audio from "./Components/Audio";
-// import HeadingContent from "./Components/HeadingContent";
-// import HeadingParagraph from "./Components/HeadingParagraph";
+import FirstPage from "./Components/FirstPage";
+import Contact from "./Components/Contact";
+import Audio from "./Components/Audio";
+// Test
+import ThreeSixty from "./Components/360";
 // import Profile from "./Components/Profile";
 // import Testimonial from "./Components/Testimonial";
-// import Dashboard from "./Components/Dashboard";
-// import NewDash2 from "./Components/NewDash2";
 // import Imageslider from "./Components/ImageSlider";
-// import FirstPage from "./Components/FirstPage";
-// import Contact from "./Components/Contact";
-// import ThreeSixty from "./Components/360";
 
 
 const App = () => {
@@ -53,33 +50,26 @@ const App = () => {
             <Brands />
             <FAQ />
             <Quote />
-            <Footer />
           </Route>
-          {/* <Route exact path="/about">
+          <Route exact path="/about">
             <FirstPage />
             <Brands />
-            <Footer />
           </Route>
-          <Route
-            exact
-            path="/gallery"
-            component={
-              <div className="fluid-container mb-3">
+          <Route exact path="/gallery">
+              <div className="fluid-container">
                 <SliderGallery />
                 <SliderGalleryReverse />
-                <Footer className="mt-3" />
               </div>
-            }
-          ></Route>
+          </Route>
           <Route exact path="/get-in-touch">
             <Contact />
-          </Route> */}
+          </Route>
           <Route exact path="/test">
-            {/* <FAQ />
-            <ThreeSixty /> */}
+            <ThreeSixty />
           </Route>
         </Switch>
-        {/* <Audio /> */}
+        <Footer />
+        <Audio />
       </Router>
     </>
   );
